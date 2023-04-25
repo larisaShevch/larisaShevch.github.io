@@ -1,0 +1,551 @@
+
+header
+  position: relative
+
+nav
+  position: fixed
+  top: 0
+  z-index: 99
+  width: 100%
+  height: 50px
+  background-color: #212121
+
+.hamburger
+  display: none
+    
+.menu
+  display: flex
+  justify-content: space-between
+  padding: 13px 70px
+  margin: 0
+  list-style-type: none
+
+  &_link
+    color: white
+    font-size: 15px
+    font-weight: 300
+
+  &_item
+    border-right: 2px dotted black
+    padding-right: 28px
+    &:last-child
+        border-right: none
+
+
+.subheader
+  margin-top: 50px
+  position: absolute
+  width: 100%
+  height: 84px
+  background-color: rgba(0, 0, 0, 0.6)
+
+  &_logo
+    display: block
+    max-width: 100%
+    margin-top: 5px
+
+    img
+      height: 50px
+      width: 256px
+
+  &_official
+    opacity: 0.5
+    color: #ffffff
+    font-size: 13px
+    font-weight: 400
+
+  &_call
+    color: #ffffff
+    font-size: 12px
+    font-weight: 300
+    margin-top: 19px
+    text-align: right
+
+  &_phone
+    display: block
+    margin-top: 8px
+    color: #ffffff
+    font-size: 22px
+    text-transform: uppercase
+    text-align: right
+    line-height: 12px
+
+  &_btn
+    margin-top: 19px
+    width: 172px
+    height: 46px
+    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12)
+    border: none
+    border-radius: 4px
+    background-image: linear-gradient(to top, $main-color 0%, #4ce2ff 100%)
+    color: #ffffff
+    font-size: 14px
+    text-transform: uppercase
+    +btn_hover
+
+ 
+.promo
+  min-height: 800px
+  background: url(../img/hd-wallpaper-gefe750cdc_1920.jpg) center (center / cover) no-repeat
+  padding: 150px 0 135px 0
+
+  &_header
+    color: #ffffff
+    font-size: 60px
+    font-weight: 700
+    text-transform: uppercase
+    line-height: 60px
+    text-align: center
+
+  &_subheader
+    color: #ffffff
+    font-size: 36px
+    font-weight: 700
+    text-transform: uppercase
+    line-height: 36px
+    margin-top: 23px
+    text-align: center
+
+  &_descr
+    color: #ffffff
+    font-size: 18px
+    font-weight: 400
+    line-height: 24px
+    text-align: center
+    margin-top: 23px 
+
+  &_btn
+    display: block
+    margin: 118px auto 0 auto
+    width: 259px
+    height: 63px
+    box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12)
+    border: none
+    border-radius: 4px
+    background-image: linear-gradient(to top, $main-color 0%, #4ce2ff 100%)
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
+    color: #ffffff
+    font-size: 18px
+    font-weight: 400
+    text-transform: uppercase
+    +btn-hover
+
+.reasons
+  min-height: 800px
+.label
+  margin: 60px auto
+  height: 24px
+  width: 112px
+  padding: 5px 12px
+  background-color: #000000
+  color: #ffffff
+  font-size: 11px
+  font-weight: 300
+  text-transform: uppercase
+  text-align: center
+
+  
+.title
+  margin-bottom: 0
+  margin-top: 38px
+  color: #222222
+  font-size: 38px
+  font-weight: 700
+  text-transform: uppercase
+  text-align: center
+
+.subtitle  
+  margin-top: 19px
+  color: #222222
+  font-size: 17px
+  font-weight: 400
+  text-align: center
+.reasons
+  &_discr
+    display: flex
+    justify-content: center
+    .perst
+      margin: 30px 30px 0 0  
+  
+  .reasons_descr
+    margin-top: 30px
+   
+
+    .reasons_subheader
+      color: $main-color
+      font-weight: 400
+
+  .reasons_img
+    display: block
+    margin-top: 50px
+    width: 120px
+    
+
+.mobile    
+  min-height: 864px  
+  padding: 48px 0 79px 0
+  background: url("../img/winter-g784471654_1920.jpg") center (center / cover) no-repeat 
+  .row
+     margin-top: 32px
+  &_item
+     position: relative
+     width: 320px
+     height: 280px 
+     margin: 0 auto
+     margin-bottom: 19px 
+     padding-top: 92px
+     &_1
+        background: url('../img/hd-wallpaper-gefe750cdc_1920.jpg') center (center / cover) no-repeat
+     &_2
+        background: url('../img/hd-wallpaper-gefe750cdc_1920.jpg') center (center / cover) no-repeat   
+     &_3
+        background: url('../img/hd-wallpaper-gefe750cdc_1920.jpg') center (center / cover) no-repeat    
+     &_4
+        background: url('../img/hd-wallpaper-gefe750cdc_1920.jpg') center (center / cover) no-repeat    
+     &_5
+        background: url('../img/hd-wallpaper-gefe750cdc_1920.jpg') center (center / cover) no-repeat  
+     &_6
+        background: url('../img/hd-wallpaper-gefe750cdc_1920.jpg') center (center / cover) no-repeat
+     &_subtitle
+        font-size: 24px
+        font-weight: 400
+        color: white
+        line-height: 31px
+        text-transform: uppercase
+        text-align: center
+     &_plus
+        display: flex
+        justify-content: center
+        align-items: center
+        position: absolute
+        bottom: 35px
+        left: 50%
+        transform: translateX(-50%)
+        width: 26px
+        height: 30px 
+        margin: 0 auto 
+        border-radius:  100% 
+        background-color: #000000
+        cursor: pointer 
+        &::before
+          content: ''
+          display: block
+          width: 14px 
+          height: 2px
+          background-color: $main-color 
+          transition: 0.3s all
+        &::after
+          content: ''
+          position: absolute 
+          left: 50%
+          transform: translateX(-50%)
+          display: block
+          height: 14px 
+          width: 2px
+          background-color: $main-color
+          transition: 0.3s all  
+        &:hover
+          &::before,&::after
+            background-color: $second-color
+            
+              
+
+.choice
+    min-height: 68px 0 84px 0
+
+
+        
+    
+    
+  
+    &_black
+       min-height: 432px
+       background: #000000
+      
+       padding-top: 50px
+       
+       &_label
+         margin: 60px auto
+         height: 24px
+         width: 112px
+         padding: 5px 12px
+         background-color: #ffffff
+         color: #000000
+         font-size: 11px
+         font-weight: 300
+         text-transform: uppercase
+         text-align: center
+       &_title
+         margin-bottom: 0
+         margin-top: 38px
+         color: #ffffff
+         font-size: 38px
+         font-weight: 700
+         text-transform: uppercase
+         text-align: center
+       &_subtitle
+         color: #ffffff
+         margin-top: 19px
+         font-size: 17px
+         font-weight: 400
+         text-align: center
+
+
+    &_semicircle
+        position: relative
+        width: 600px
+        height: 300px
+        background-color: $main-color
+        border-radius: 300px 300px 0 0
+        margin: 0 auto
+        margin-top: 28px
+        &_title
+          position: absolute
+          top: 10px
+          left: 50%     
+          transform: translateX(-50% ) 
+          text-align: center
+          
+          &_h2
+            color: white
+            font-size: 38px 
+            font-weight: 400
+          &_h3
+            color: #222222
+            font-size: 24px
+            font-weight: 400
+        
+            
+          img
+            width: 650px
+            height: 300px
+    &_white
+      min-height: 432px
+      background: url('../img/winter-g784471654_1920.jpg')
+      position: relative
+      z-index: -1
+      &_text
+        position: absolute
+        bottom: 100px
+        left: 50%
+        transform: translateX(-50%)
+        color: #000000
+        font-size: 17px
+        font-weight: 400
+        text-align: center
+  
+
+.require
+    padding: 68px 0 84px 0
+    &_block
+      margin: 33px 0
+      &_nmb
+        margin-bottom: 0px   
+    &_title
+      color:#1ca8c3
+      font-size: 22px
+      font-weight: 400  
+    &_list
+      list-style-type: none
+      padding-left: 50px
+      margin-top: 22px
+      li
+        position: relative
+        font-size: 17px
+        font-weight: 300
+        line-height: 24px
+        margin-bottom: 10px
+        &::before
+          content: ''
+          display: block
+          position: absolute 
+          left: -32px
+          top: 3px  
+          vertical-align: middle
+          width: 21px
+          height: 20px
+          background: $main-color
+
+    &_descr
+      margin-top: 25px
+      font-style: 17px
+      font-weight: 300
+      line-height: 24px
+      color: #1ca8c3    
+    .warning
+      .require_title
+          color: $second-color
+      .require_list
+          li
+            &::before
+              background: $second-color
+                
+.geography 
+    min-height: 700px
+    padding: 68px 0 84px 0
+    background: url(../img/hd-wallpaper-gefe750cdc_1920.jpg) center (center / cover) no-repeat
+    position: relative
+    &_label
+        margin: 60px auto
+        height: 24px
+        width: 112px
+        padding: 5px 12px
+        background-color: #ffffff
+        color: #000000
+        font-size: 11px
+        font-weight: 300
+        text-transform: uppercase
+        text-align: center
+    &_title
+         margin-bottom: 0
+         margin-top: 38px
+         color: #ffffff
+         font-size: 38px
+         font-weight: 700
+         text-transform: uppercase
+         text-align: center     
+    &_subtitle
+         color: #ffffff
+         margin-top: 19px
+         font-size: 17px
+         font-weight: 400
+         text-align: center
+    &_link
+        color: $main-color
+        position: absolute
+        bottom: 58px
+        left: 50%
+        transform: translateX(-50%)
+        &:hover
+          color:#083535
+          text-decoration: none
+footer
+    min-height: 320px
+.white_foot
+    min-height: 300px 
+    position: relative
+    &_straigt
+      width: 15%
+      position: absolute
+      left: 47%
+      transform: translateX(-47%)
+      top: 30px
+      display: block 
+      height: 2px
+      background-color: $main-color
+      border: 2px solid $main-color
+
+    .networks
+        width: 15%
+        position: absolute
+        left: 10px
+        top: 100px
+        &_icons
+          display: flex
+          justify-content: space-between
+          list-style-type: none
+          &_circle
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 32px 
+            height: 32px
+            background-color: black
+            border-radius: 100% 
+            margin: 3px
+            i
+              color: #fff  
+              
+          
+    .information
+        width: 58%
+        position: absolute
+        left: 40%
+        transform: translateX(-40%)
+        top: 100px 
+        
+
+        &_title
+          display: flex
+          justify-content: center
+          list-style-type: none
+          &_item
+            margin: 0 10px
+            font-size: 22px
+            font-weight: 400
+          &_link
+            color: #000
+            &:hover
+              color: #424040
+              text-decoration: none
+        &_subtitle
+          display: flex
+          justify-content: center
+          list-style-type: none
+         
+          &_item
+            margin: 0 5px
+            font-style: 17px
+            font-weight:300
+           
+          &_link
+             color: #000000 
+             &:hover
+              color: #424040
+              text-decoration: none 
+    .os 
+        width: 25%
+        position: absolute
+        right: 30px
+        top: 70px
+        &_icons
+          display: flex
+          justify-content: flex-end
+          list-style-type: none
+          &_google
+            width: 120px
+            height: 100px
+            margin: 5px
+    .language
+         
+         position: absolute
+         left: 45%
+         transform: translateX(-45%) 
+         bottom: 50px
+         &_item 
+           font-style: 22px
+           font-weight: 400
+           color: $main-color
+           &:hover
+            color:#083535
+            text-decoration: none
+.black_foot
+    min-height: 20px
+    background-color: #000000           
+         
+.xs-visible
+  display: none
+
+ 
+
+
+       
+    
+
+      
+
+           
+
+        
+
+
+   
+  
+ 
+   
+   
+ 
+     
+      
+
+          
